@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Статья</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="header">
+	<a href="index.html" class="logo">
+		<h1 style="color: #0f6674">
+			Поделка
+		</h1>
+
+	</a>
+	<ul id="navigation">
+		<li class="selected">
+			<a href="index.html">Главная</a>
+		</li>
+		<li>
+			<a href="terms.html">Условия и положения</a>
+		</li>
+		<li>
+			<a href="policy.html">Политика конфиденциальности</a>
+		</li>
+		<li>
+			<a href="blog.html">Статьи</a>
+		</li>
+		<li>
+			<a href="contact.html">Контакты</a>
+		</li>
+	</ul>
+</div>
+<div id="body">
+	<h1><span>Статья</span></h1>
+	<div>
+		<img style="width: 100%" src="./assets/images/eniko-kis-c0kncb7-bew-unsplash.jpg" alt="">
+		<div class="article">
+			<h2>Торт для вашего любимого человека</h2>
+			<p>
+				 <strong>Торт для вашего любимого человека</strong> супер шоколадный торт, который будет радовать, я обещаю вам, что человек будет счастлив!Творог это очень вкусно, мне понадобится много-коробка-коробка-коробка-коробка... Пирог с индейкой, я приготовлю его заранее.Для удобства приготовления я делаю зефирное тесто в виде папье-маше, складывая края. Диаметр торта должен быть равен диаметру обычного пирога.Накройте торт кремом, разостлите листья на 10-20 см, выпекайте при 180 градусах в течение 5-10 минут, пока они не приобретут золотистый цвет. Торт готов, пришло время позвать всех к столу. Приятного чаепития!Шоколадный торт получился очень вкусным! Я обязательно сделаю еще один торт, который, кстати, я скрутила из кондитерского мешка теста для кондитерских изделий.Яичные рулеты, которые, насколько мне известно, не пекутся, готовы, получаются мягкими и вкусными. Моя дочь испечет себе пирог с грибами, а я сладкую ягоду. Фарш наносят по краям торта, посыпают небольшим количеством соли, ждут 10 минут, а затем намазывают кремом. Торт готов, пришло время позвать всех к столу. Всем хорошего настроения! Приятного Аппетита!
+			</p>
+
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div>
+		<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+			All rights reserved</p>
+		<ul>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+			</li>
+			<li>
+				<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class='cookie-banner'>
+	<p>
+		Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+	</p>
+	<button class='close-cookie'>&times;</button>
+</div>
+<script>
+	window.onload = function () {
+		$('.close-cookie').click(function () {
+			$('.cookie-banner').fadeOut();
+		})
+	}
+</script>
+<script>
+	let elems = document.querySelectorAll('.server-name');
+	elems.forEach((elem) => {
+		elem.innerHTML = window.location.hostname
+	})
+</script>
+</body>
+</html>

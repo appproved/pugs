@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Новые телефона</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="header">
+	<a href="index.html" class="logo">
+		<h1 style="color: #0f6674">
+			Подарок дедушке
+		</h1>
+
+	</a>
+	<ul id="navigation">
+		<li  >
+			<a href="index.html">Главная</a>
+		</li>
+		<li>
+			<a href="terms.html">Условия и положения</a>
+		</li>
+		<li>
+			<a href="policy.html">Политика конфиденциальности</a>
+		</li>
+		<li >
+			<a href="blog.html">Статьи</a>
+		</li>
+		<li class="selected" >
+			<a href="contact.html">Контакты</a>
+		</li>
+	</ul>
+</div>
+	<div id="body">
+		<h1><span>Контакты</span></h1>
+		<form action="thanks.html" method="post">
+			<input type="text" name="fname" id="fname" placeholder="Новые телефона">
+
+			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="text" name="phone" id="phone" placeholder="Номер телефона">
+			<textarea name="message" id="message"></textarea>
+			<input style="width: 40px" type="checkbox" name="terms" value="check" required=""/>
+			<a href="policy.html" target="_blank">
+				Я прочитал и согласен с условиями пользовательского соглашения
+			</a>
+			<input style="margin-left: 30px;"  type="submit" name="send" id="send" placeholder="Отправить">
+		</form>
+	</div>
+	<div id="footer">
+		<div>
+			<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+				All rights reserved</p>
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='cookie-banner'>
+		<p>
+			Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+</body>
+</html>
